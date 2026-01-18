@@ -2,7 +2,8 @@
 
 **Reference Designs** based on 
 - Mohamed-U3 PCB V3.1 of hackaBLE https://github.com/Mohamed-U3/ElectronutLabs-hackaBLE
-- Reference code https://github.com/agittins/NarfButt
+- Reference code https://github.com/agittins/NarfButt\
+- uses https://github.com/bouni/kicad-jlcpcb-tools for JLCPCB intergration. 
 
 **Features**
 
