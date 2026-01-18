@@ -3,12 +3,13 @@
 **Reference Designs** based on 
 - Mohamed-U3 PCB V3.1 of hackaBLE https://github.com/Mohamed-U3/ElectronutLabs-hackaBLE
 - Reference code https://github.com/agittins/NarfButt\
-- uses https://github.com/bouni/kicad-jlcpcb-tools for JLCPCB intergration. 
+- uses https://github.com/bouni/kicad-jlcpcb-tools for JLCPCB intergration.
+- uses https://raw.githubusercontent.com/CDFER/
 
 **Features**
 
 - Raytac MDBT42 based on Nordic Semiconductor's nRF52832 SOC with chip antenna
-- RGB LED
+- 3 LED's
 - Button user configurable, set as RESET by default
 - SWD programming headers
 - CR2032 power
@@ -20,9 +21,9 @@
 - P0.01 32.768KHz with 12pF load caps
 - P0.11 Up push button
 - P0.12 Down push button
-- P0.17 Red LED via 200 ohm pull up
-- P0.18 Green LED via 100 ohm pull up
-- P0.19 Blue LED via 100 ohm pull up
+- P0.17 Red LED via 33 ohm pull up at about 5ma when on. 
+- P0.18 Green LED via 10 ohm pull up at about 5ma when on. 
+- P0.19 White LED via 10 ohm pull up at about 5ma when on. 
 - P0.21 Reset push button via 10k pull up resistor. 
 - Ant 0.8pF and 3.9nH filter to PCB trace antenna. 
 - XC1 ABM8-32.000MHZ-B2-T3 with 12pF load caps
