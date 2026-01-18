@@ -14,16 +14,23 @@
 - Button up
 - Button down
 
-** IO **
-- P0.00 32.768KHz
-- P0.01 32.768KHz
+**nRF52 IO**
+- P0.00 32.768KHz with 12pF load caps
+- P0.01 32.768KHz with 12pF load caps
 - P0.11 Up push button
 - P0.12 Down push button
-- P0.17 Red LED
-- P0.18 Green LED
-- P0.19 Blue LED
+- P0.17 Red LED via 200 ohm pull up
+- P0.18 Green LED via 100 ohm pull up
+- P0.19 Blue LED via 100 ohm pull up
 - P0.21 Reset push button via 10k pull up resistor. 
-- Ant intergrated PCB antenna
-- XC1 ABM8-32.000MHZ-B2-T3
-- XC2 ABM8-32.000MHZ-B2-T3
-
+- Ant 0.8pF and 3.9nH filter to PCB trace antenna. 
+- XC1 ABM8-32.000MHZ-B2-T3 with 12pF load caps
+- XC2 ABM8-32.000MHZ-B2-T3 with 12pF load caps
+- VDD 4.7uF, 0.1uF, 0.1uF caps to gnd
+- DEC1 0.1uF to Ggnd
+- DEC2 No connection
+- DEC3 No connection
+- DEC4 to DCC via inductors listed below. 
+- DCC 10uH to 15nH to DEC4 to 1uF to gnd
+- SWD is connected to a dedicated connector with VDD and gnd
+- All unused pins are routed to a connector which allows probing with a scope or adding prototype features. 
