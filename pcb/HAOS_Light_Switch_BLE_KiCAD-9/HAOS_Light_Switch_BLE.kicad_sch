@@ -3714,6 +3714,199 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
+				(at 2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Cortex Debug Connector ARM SWD JTAG"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*TC2030*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030-NL_0_0"
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TCK" output line)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TMS" bidirectional line)
+				)
+				(pin input line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "SWO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "TDO" input line)
+				)
+			)
+			(symbol "Conn_ARM_SWD_TagConnect_TC2030-NL_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -15467,7 +15660,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 36.83) (xy 123.19 36.83)
+			(xy 132.08 43.18) (xy 124.46 43.18)
 		)
 		(stroke
 			(width 0)
@@ -16107,7 +16300,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 41.91) (xy 125.73 41.91)
+			(xy 132.08 48.26) (xy 127 48.26)
 		)
 		(stroke
 			(width 0)
@@ -16217,6 +16410,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 30.48) (xy 104.14 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "814a5452-1b80-4b00-8a40-cacbbe6859bf")
+	)
+	(wire
+		(pts
 			(xy 97.79 68.58) (xy 93.98 68.58)
 		)
 		(stroke
@@ -16297,7 +16500,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 34.29) (xy 123.19 34.29)
+			(xy 132.08 40.64) (xy 124.46 40.64)
 		)
 		(stroke
 			(width 0)
@@ -16444,6 +16647,16 @@
 			(type default)
 		)
 		(uuid "9f5440f8-76de-46ee-80b5-800f2acfd07d")
+	)
+	(wire
+		(pts
+			(xy 110.49 27.94) (xy 104.14 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a136aa0c-4d84-4b92-8a40-9a91fc82d73d")
 	)
 	(wire
 		(pts
@@ -16707,7 +16920,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 39.37) (xy 125.73 39.37)
+			(xy 132.08 45.72) (xy 127 45.72)
 		)
 		(stroke
 			(width 0)
@@ -16924,6 +17137,16 @@
 			(type default)
 		)
 		(uuid "f4a6e441-5bc9-4076-859a-b8a657a86c2a")
+	)
+	(wire
+		(pts
+			(xy 110.49 22.86) (xy 104.14 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f57a71ca-8fff-4a16-ad18-101dcfc579c1")
 	)
 	(wire
 		(pts
@@ -17325,6 +17548,16 @@
 		)
 		(uuid "7488294e-984f-4a00-b1e6-136515e1cd95")
 	)
+	(label "SWDCLK"
+		(at 104.14 27.94 0)
+		(effects
+			(font
+				(size 0.9906 0.9906)
+			)
+			(justify left bottom)
+		)
+		(uuid "79136404-971c-4675-b02c-6149e61030c0")
+	)
 	(label "P0.25"
 		(at 48.26 45.72 0)
 		(effects
@@ -17336,7 +17569,7 @@
 		(uuid "7e6cd0c5-f673-48a1-ad99-5a5abc035e39")
 	)
 	(label "SWDCLK"
-		(at 123.19 34.29 0)
+		(at 124.46 40.64 0)
 		(effects
 			(font
 				(size 0.9906 0.9906)
@@ -17475,6 +17708,16 @@
 		)
 		(uuid "cd9b50e1-977a-4002-b03e-f12ba6e683e0")
 	)
+	(label "RESET"
+		(at 104.14 22.86 0)
+		(effects
+			(font
+				(size 0.9906 0.9906)
+			)
+			(justify left bottom)
+		)
+		(uuid "ceb14678-9121-4b25-9678-6aaeef0314d5")
+	)
 	(label "P0.19"
 		(at 68.58 38.1 0)
 		(effects
@@ -17486,7 +17729,7 @@
 		(uuid "d034a01c-2c68-4212-9cf2-3470d3ff3898")
 	)
 	(label "SWDIO"
-		(at 123.19 36.83 0)
+		(at 124.46 43.18 0)
 		(effects
 			(font
 				(size 0.9906 0.9906)
@@ -17614,6 +17857,16 @@
 			(justify left bottom)
 		)
 		(uuid "f532fea9-c2f6-4959-b199-17df4134c8bf")
+	)
+	(label "SWDIO"
+		(at 104.14 30.48 0)
+		(effects
+			(font
+				(size 0.9906 0.9906)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff758ca6-c65a-48ba-b4c4-1e48ce757d15")
 	)
 	(label "P0.31"
 		(at 48.26 30.48 0)
@@ -17892,7 +18145,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C221895"
+		(property "LCSC" "C2888429"
 			(at 26.67 44.45 90)
 			(effects
 				(font
@@ -18434,7 +18687,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 39.37 270)
+		(at 127 45.72 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18442,7 +18695,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005a62d0db")
 		(property "Reference" "#PWR012"
-			(at 119.38 39.37 0)
+			(at 120.65 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18451,7 +18704,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 121.92 39.37 0)
+			(at 123.19 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18459,7 +18712,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 39.37 0)
+			(at 127 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18468,7 +18721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 39.37 0)
+			(at 127 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18477,7 +18730,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 39.37 0)
+			(at 127 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18932,7 +19185,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 125.73 41.91 180)
+		(at 127 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18940,7 +19193,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b86b1fa")
 		(property "Reference" "#PWR017"
-			(at 125.73 38.1 0)
+			(at 127 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18949,7 +19202,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 125.73 45.72 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18957,7 +19210,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 41.91 0)
+			(at 127 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18966,7 +19219,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 41.91 0)
+			(at 127 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18975,7 +19228,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 41.91 0)
+			(at 127 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19252,7 +19505,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 135.89 36.83 0)
+		(at 137.16 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -19260,7 +19513,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005bab2690")
 		(property "Reference" "J7"
-			(at 135.89 31.75 0)
+			(at 137.16 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19268,7 +19521,7 @@
 			)
 		)
 		(property "Value" "SWD"
-			(at 135.89 44.45 0)
+			(at 137.16 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19276,7 +19529,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 135.89 36.83 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19285,7 +19538,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 36.83 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19294,7 +19547,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 135.89 36.83 0)
+			(at 137.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20182,7 +20435,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C221895"
+		(property "LCSC" "C2888429"
 			(at 236.22 115.57 90)
 			(effects
 				(font
@@ -20973,6 +21226,134 @@
 			(project ""
 				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 120.65 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "438741f3-426e-4d72-83e4-ffdf289340fc")
+		(property "Reference" "#PWR028"
+			(at 120.65 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6370e27-0acf-45a2-a758-f0555e71f163")
+		)
+		(instances
+			(project "HAOS_Light_Switch_BLE"
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 120.65 17.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "442b4584-8884-421a-8b55-7416d3f1e8b5")
+		(property "Reference" "#PWR029"
+			(at 120.65 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 120.65 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92b5ca5b-68da-4105-ad20-27e4c151235f")
+		)
+		(instances
+			(project "HAOS_Light_Switch_BLE"
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -22709,7 +23090,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C221895"
+		(property "LCSC" "C2888429"
 			(at 217.17 115.57 90)
 			(effects
 				(font
@@ -24018,6 +24399,89 @@
 			(project "HAOS_Light_Switch_BLE"
 				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL")
+		(at 118.11 27.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "babb0f45-cd7c-4e1a-a58c-ced575cde9e3")
+		(property "Reference" "J6"
+			(at 124.46 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
+			(at 124.46 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+			(at 118.11 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6a614a56-33db-4580-9402-d38b7af34313")
+		)
+		(pin "2"
+			(uuid "c361a031-b8ce-4b89-ad4f-5e0aafb7e113")
+		)
+		(pin "4"
+			(uuid "8c2ee9be-072f-42d4-bfe4-feb412387aac")
+		)
+		(pin "1"
+			(uuid "ae35a0d0-d75b-4508-9871-9dfc5915f793")
+		)
+		(pin "5"
+			(uuid "0ef6d870-fe43-4edd-b15c-e8bc5c104756")
+		)
+		(pin "6"
+			(uuid "89db3c7a-9c8d-40ac-93b1-80e4f0c81440")
+		)
+		(instances
+			(project ""
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "J6")
 					(unit 1)
 				)
 			)
