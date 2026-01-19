@@ -1,0 +1,129 @@
+(footprint "PTS810_Switch"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "SW1"
+		(at 3.2 0 0)
+		(layer "F.SilkS")
+		(uuid "04c9dd52-6d91-4dbb-bb8d-5c5b9e792b7c")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.06)
+			)
+		)
+	)
+	(property "Value" "SW_Push"
+		(at 0.6 -3.9 0)
+		(layer "F.Fab")
+		(uuid "70247957-41c1-44c1-bd56-44d8795cf255")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21abb8ce-cbc9-4caf-b4c9-2e0b764e5698")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "84a515b1-4c46-4658-8433-e7c28a12f7e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.1 -0.6)
+		(end -2.1 0.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "240bc4f9-b6f0-40fb-af8c-546399f96a7b")
+	)
+	(fp_line
+		(start -1.45 1.5)
+		(end 1.45 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8f9c750f-3ff1-4edc-8f70-59bef061133f")
+	)
+	(fp_line
+		(start 1.45 -1.5)
+		(end -1.45 -1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0dc6148-dd75-4d31-87f7-593000fc7426")
+	)
+	(fp_line
+		(start 2.1 0.6)
+		(end 2.1 -0.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0f92462d-4f1c-42fd-881e-8774c58c8d99")
+	)
+	(pad "1" smd rect
+		(at -2.075 -1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e5df3f62-7ad5-4ebf-b3ab-358c69983516")
+	)
+	(pad "2" smd rect
+		(at -2.075 1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8e6adc0f-0e94-4d98-89f2-c1f3685d4f6c")
+	)
+	(pad "3" smd rect
+		(at 2.075 -1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "069111b8-67c9-4a86-8421-72b214d00097")
+	)
+	(pad "4" smd rect
+		(at 2.075 1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5b2e58e1-baa0-473c-9f6f-c7038817e91a")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/R_D_designer/Documents/KiCad/9.0/3dmodels/SparkFun-3D-models/Switch/PTS810 SJK 250 SMTR LFS.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

@@ -2,3 +2,5 @@
 _build/
 node_modules/
 package-lock.json
+HAOS_Light_Switch_BLE-backups
+*.bak
