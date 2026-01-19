@@ -3714,6 +3714,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -15595,6 +15737,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 45.72) (xy 105.41 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd55c75-b4b3-4682-b34a-e6b550c60786")
+	)
+	(wire
+		(pts
 			(xy 27.94 107.95) (xy 27.94 113.03)
 		)
 		(stroke
@@ -16285,6 +16437,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 48.26) (xy 105.41 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f5440f8-76de-46ee-80b5-800f2acfd07d")
+	)
+	(wire
+		(pts
 			(xy 53.34 43.18) (xy 48.26 43.18)
 		)
 		(stroke
@@ -16382,6 +16544,16 @@
 			(type default)
 		)
 		(uuid "b8da6bf7-7602-45f5-8b2c-b9de9b12b23e")
+	)
+	(wire
+		(pts
+			(xy 105.41 48.26) (xy 105.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96d7f87-9b40-4e3b-b26b-7c2733a82dc8")
 	)
 	(wire
 		(pts
@@ -19670,6 +19842,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 115.57 48.26 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10fa0e33-048c-4f05-b731-fae803794875")
+		(property "Reference" "J5"
+			(at 115.57 51.054 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR"
+			(at 115.57 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical"
+			(at 115.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 115.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70de0e8a-fd6e-4973-9bf0-76a3a578a9b2")
+		)
+		(pin "2"
+			(uuid "d325621d-5524-4738-8044-76d17dfe5e0f")
+		)
+		(instances
+			(project "HAOS_Light_Switch_BLE"
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0603,10Ω")
 		(at 181.61 31.75 90)
 		(unit 1)
@@ -21013,7 +21253,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C88918"
+		(property "LCSC" "C1550"
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -21085,7 +21325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
+		(property "Manufacturer" ""
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -21094,7 +21334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "0402CG1R0C500NT"
+		(property "Part" ""
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -21113,7 +21353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Capacitance" "0.8pF"
+		(property "Capacitance" "1pF"
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -21122,7 +21362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature Coefficient" "C0H"
+		(property "Temperature Coefficient" "COG"
 			(at 165.1 119.38 0)
 			(effects
 				(font
@@ -21477,6 +21717,70 @@
 			(project ""
 				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 105.41 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69e8b4c7-14c8-44dd-828b-a344394417b1")
+		(property "Reference" "#PWR08"
+			(at 105.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92841316-183e-41f2-b28d-b69358588c41")
+		)
+		(instances
+			(project "HAOS_Light_Switch_BLE"
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -22851,7 +23155,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1986787"
+		(property "LCSC" "C1986513"
 			(at 160.02 95.25 0)
 			(effects
 				(font
@@ -24476,6 +24780,70 @@
 			(project "HAOS_Light_Switch_BLE"
 				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e64c7d1d-379f-46cb-92b1-3179fca22ebb")
+		(property "Reference" "#PWR07"
+			(at 105.41 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32e36661-eb56-42e9-ada0-a5a2137d1583")
+		)
+		(instances
+			(project "HAOS_Light_Switch_BLE"
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
