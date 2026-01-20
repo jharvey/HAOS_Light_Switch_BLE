@@ -16178,6 +16178,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 33.02) (xy 104.14 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "272b70cf-aec3-470c-b7e3-a7efb7d1c9f1")
+	)
+	(wire
+		(pts
 			(xy 149.86 116.84) (xy 153.67 116.84)
 		)
 		(stroke
@@ -16415,16 +16425,6 @@
 			(type default)
 		)
 		(uuid "4e623a11-b768-4a82-86af-2807009d7116")
-	)
-	(wire
-		(pts
-			(xy 53.34 45.72) (xy 48.26 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fc598d8-a748-481a-887a-12d4bd762892")
 	)
 	(wire
 		(pts
@@ -17716,6 +17716,16 @@
 		)
 		(uuid "49298006-4694-4719-9a25-4fd9b33769ab")
 	)
+	(label "SWO"
+		(at 104.14 33.02 0)
+		(effects
+			(font
+				(size 0.9906 0.9906)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ceb05b7-703e-4ce0-b596-575159532aed")
+	)
 	(label "P0.23"
 		(at 143.51 124.46 180)
 		(effects
@@ -17806,7 +17816,7 @@
 		)
 		(uuid "68f667e7-dfa0-4c9d-bc40-a25c87e2c215")
 	)
-	(label "P0.25"
+	(label "SWO"
 		(at 114.3 80.01 270)
 		(effects
 			(font
@@ -17845,16 +17855,6 @@
 			(justify left bottom)
 		)
 		(uuid "79136404-971c-4675-b02c-6149e61030c0")
-	)
-	(label "P0.25"
-		(at 48.26 45.72 0)
-		(effects
-			(font
-				(size 0.9906 0.9906)
-			)
-			(justify left bottom)
-		)
-		(uuid "7e6cd0c5-f673-48a1-ad99-5a5abc035e39")
 	)
 	(label "SWDCLK"
 		(at 124.46 40.64 0)
@@ -23644,6 +23644,70 @@
 			(project ""
 				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 53.34 45.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "877688b8-cafe-4fbe-960b-17afd006e919")
+		(property "Reference" "#PWR030"
+			(at 57.15 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 48.514 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9fa6e395-96aa-464d-a8bf-399918bda0ff")
+		)
+		(instances
+			(project "HAOS_Light_Switch_BLE"
+				(path "/7bf155d7-cf3f-4b19-a6e4-e06ff318c707"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
