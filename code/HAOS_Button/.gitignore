@@ -1,0 +1,20 @@
+# editors
+*.swp
+*~
+
+# build
+/build*/
+
+# Ignore the entire build directory (compiled binaries, temporary scripts)
+build/
+
+# Ignore VS Code internal settings (prevents path conflicts)
+.vscode/
+
+# Ignore standard OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore Zephyr/Python temporary files
+__pycache__/
+*.pyc

@@ -1,0 +1,20 @@
+/ {
+    aliases {
+        led0 = &green_led;
+        sw0 = &push_button;  /* This connects the code's "sw0" to the hardware below */
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        green_led: led_0 {
+            gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
+        };
+    };
+
+    buttons {
+        compatible = "gpio-keys"; /* Tells Zephyr these pins behave like buttons */
+        push_button: button_0 {
+            gpios = <&gpio0 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        };
+    };
+};
