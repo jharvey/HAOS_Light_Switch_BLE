@@ -1,7 +1,8 @@
 / {
     aliases {
         led0 = &green_led;
-        sw0 = &push_button;  /* This connects the code's "sw0" to the hardware below */
+        sw0 = &button_up;
+        sw1 = &button_down;
     };
 
     leds {
@@ -12,9 +13,16 @@
     };
 
     buttons {
-        compatible = "gpio-keys"; /* Tells Zephyr these pins behave like buttons */
-        push_button: button_0 {
-            gpios = <&gpio0 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        compatible = "gpio-keys";
+        button_up: button_up {
+            /* P0.11: Pull-up activated, active when shorted to GND */
+            gpios = <&gpio0 11 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Up Button";
+        };
+        button_down: button_down {
+            /* P0.12: Pull-up activated, active when shorted to GND */
+            gpios = <&gpio0 12 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Down Button";
         };
     };
 };
