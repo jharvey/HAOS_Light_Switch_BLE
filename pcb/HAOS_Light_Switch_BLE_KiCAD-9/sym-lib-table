@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "nRF52")(type "KiCad")(uri "${KIPRJMOD}/HAOS_Light_Switch_Symbols/nrf52832.kicad_sym")(options "")(descr ""))
   (lib (name "BLE-Ant")(type "KiCad")(uri "${KIPRJMOD}/HAOS_Light_Switch_Symbols/2450AT18A100E.kicad_sym")(options "")(descr ""))
+  (lib (name "easyeda2kicad")(type "KiCad")(uri "${EASYEDA2KICAD}/easyeda2kicad.kicad_sym")(options "")(descr ""))
 )
