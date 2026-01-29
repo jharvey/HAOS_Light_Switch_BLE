@@ -1185,6 +1185,12 @@
           "label": "Power Dissipation",
           "name": "Power Dissipation",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
         }
       ],
       "filter_string": "",
